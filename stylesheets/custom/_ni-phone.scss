@@ -1,0 +1,176 @@
+//
+// Custom CSS (Normal CSS file)  - New Internationalist CMS Templates 2014 - Peter Stewart (pete.stewart@newint.org)
+// --------------------------------------------------------------------------------------------------------------------
+
+body
+{
+    border-top: none;
+    //border-top:7px solid $brand-primary;
+}
+
+.ni_header
+{
+    //@extend .row;
+    background-color:$brand-primary;
+    padding: 5px 0;
+
+}
+
+.ni_header h1
+{
+    margin: 0;
+    padding: 0;
+}
+
+.ni_hgroup 
+{
+    margin: 0;
+    padding: 0;
+}
+
+.ni_logo
+{
+    @extend .text-hide;
+    @extend .ni_header-logo;
+}
+
+.ni_text-hide 
+{
+    @extend .text-hide;
+    margin: 0;
+}
+
+.ni_navbar-login, .ni_navbar-search, .ni_navbar-menu
+{
+    width: 100%;
+    background-color: #fff;
+    padding: 8px 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.ni_sub-nav li
+{
+    width: 45%;
+    margin-right: 4%;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+#carousel
+{
+    max-width: 600px;
+    margin: auto;
+}
+
+.ni_h1, .ni_lead
+{
+    padding-left:  ($grid-gutter-width / 2);
+    padding-right: ($grid-gutter-width / 2);
+}
+
+.ni_social-login
+{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#ni_user-login-form
+{
+    padding: 10px 0;
+}
+
+blockquote
+{
+    @include box-shadow(0 0 6px rgba(0,0,0,0.5));
+    border-left: 0.5em solid $brand-primary;
+    @include border-left-radius(3px);
+    background-color: #fff;
+    margin-left: 1em;
+    padding: 1px 15px 9px;
+}
+
+
+blockquote p
+{
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    display: inline-block;
+}
+blockquote:before
+{
+    content:'\201C';
+    margin: 0 0.67em 1em -1.19em;
+    color: $brand-primary;
+
+    font-size:42px;
+    line-height:16px;
+    font-weight:bold;
+}
+
+//.ni_awards cite
+//{
+    //    display: block;
+//}
+
+.ni_footer
+{
+    clear: both;
+    height: 30px;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+    border-top: 4px solid $brand-primary;
+}
+
+.ni_foot-links
+{
+    overflow: hidden;
+    margin: auto;
+    display: inline-block;
+    padding: 0;
+}
+
+.ni_foot-links li
+{
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.ni_copyright
+{
+    color: $gray-light;
+    font-size: $font-size-small;
+}
+
+
+.ni_navbar-toggle
+{
+    margin-top: 2px;
+    margin-bottom: 0px;
+    padding: 4px 8px;
+    font-size: 18px;
+}
+
+
+.ni_color-white
+{
+    color:#fff;
+}
+
+.ni_bgcolor-white
+{
+    background-color:#fff;
+}
+
+.ni_divider
+{
+    height: 1px;
+    margin: 9px 0px;
+    overflow: hidden;
+    background-color: rgb(229, 229, 229);
+    display: block;
+}
+
+ 

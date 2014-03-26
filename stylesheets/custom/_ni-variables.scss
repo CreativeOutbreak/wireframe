@@ -1,1 +1,81 @@
-$test: #333; 
+//
+// Variables
+// --------------------------------------------------
+
+
+// Global values
+// --------------------------------------------------
+
+$ni_site-sprite: 'graphics/sprite.png';
+$ni_mobile-logo: 'graphics/mobile-logo.png';
+
+$ni_sprite-width: 480px; // currently the same as main logo width, but just because there's nothing else in the sprite.  This will change.
+$ni_sprite-height: 76px; // currently the same as main logo height, but just because there's nothing else in the sprite.  This will change.
+
+$ni_mobile-logo-width: 250px;
+$ni_mobile-logo-height: 40px;
+
+$ni_header-height-large: 130px;
+$ni_header-height-tablet: 130px;
+$ni_header-height-phone: 50px;
+
+// Width & height for the full size New Internationalist logo.
+$ni_main-logo-width: 440px;
+$ni_main-logo-height: 76px;
+$ni_main-logo-bg-position: 0px;
+
+// Width, height & possition for the New Internationalist medium sized logo.
+$ni_mid-logo-width: 210px;
+$ni_mid-logo-height: 40px;
+$ni_mid-logo-bg-position: -40px 0px;
+
+
+// Width & height for the New Internationalist icon.
+$ni_icon-logo-width: 40px;
+$ni_icon-logo-height: 40px;
+$ni_icon-logo-bg-position: 0px 0px;
+
+$ni_phone_h1_font_size: ceil($font-size-base * 2.142857143); // ~30px
+$ni_line-height-small: 1.142857143; // ~16
+
+$ni_div-margin-bottom: 20px;
+
+$ni_cmq-size: 610px;
+
+
+// Media queries breakpoints -- Taken from old bootstrap variable.less - Pete 
+// --------------------------------------------------
+
+// Tiny screen / phone
+$screen-tiny:                480px;
+$screen-phone:               $screen-tiny;
+
+// Phone portrait - added by Pete
+$screen-phone-portrait:      320px;
+// Large Phone - added by Pete
+$screen-large-phone:         360px;
+
+// Small tablet - added by Pete
+$screen-small-tablet:        640px;
+
+// Small screen / tablet
+$screen-small:               768px;
+$screen-tablet:              $screen-small;
+
+// Medium screen / desktop
+$screen-medium:              992px;
+$screen-desktop:             $screen-medium;
+
+// Large screen / wide desktop
+$screen-large:               1200px;
+$screen-large-desktop:       $screen-large;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-small-max:           ($screen-medium - 1);
+$screen-tablet-max:          $screen-small-max;
+
+$screen-medium-max:           ($screen-large - 1);
+$screen-desktop-max:          $screen-medium-max;
+
+
+ 

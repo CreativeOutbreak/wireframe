@@ -1,9 +1,32 @@
+
+// Bootstrap variable override -- bs vars are over written here so we can update bs in the future. -- Odd point that SASS seems to take the first variable as the master, rather than overriding.
+@import "custom/bs-var-override";
+
+// Bootstrap variables -- removed from _bootstrap.scss so they can be over writen here
+@import "bootstrap/variables";
+
+
 // Core bootstrap sass file import. 
 @import "bootstrap/bootstrap";
 
-// Bootstrap variable override
-@import "custom/bs-var-override";
 
 // Custom variables
+@import "custom/ni-variables";
 
-//@import "custom/ni-variables.scss";
+// Custom mixins
+@import "custom/ni-mixins";
+
+// Custom extendtions 
+@import "custom/ni-extend";
+
+
+// Smallest phone css - this is basically the defualt css.
+@import "custom/ni-phone";
+
+// This is the media query css for tablet devices
+@import "custom/ni-tablet-mq";
+
+// This is the media query css for desktops
+@import "custom/ni-desktop-mq";
+
+
