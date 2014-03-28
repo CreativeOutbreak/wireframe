@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+        <title></title>
+
+        <meta name="author" content="" />
+        <meta name="description" content="" />
+
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image"    content="" />
+        <meta itemprop="image"       content="">
+
+        <link rel="image_src"        href="" />
+        <link rel="shortcut icon"    href="">
+        <link rel="apple-touch-icon" href="" />
+        <link rel="apple-touch-icon" sizes="72x72" href="" />
+        <link rel="apple-touch-icon" sizes="114x114" href="" />
+        <link rel="apple-touch-icon" sizes="144x144" href="" />
+
+        <link rel="stylesheet" href="../css/main.min.css"/>
+    </head>
+    <body>
+        <header class="ni_header navbar">
+        <div class="ni_hgroup">
+            <span class="divider-vertical"></span>
+            <button type="button" class="navbar-toggle navbar-btn ni_navbar-toggle" data-toggle="collapse" data-target=".ni_navbar-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-show_lines ni_color-white"></span>
+            </button>
+            <button type="button" class="navbar-toggle navbar-btn ni_navbar-toggle" data-toggle="collapse" data-target=".ni_navbar-search">
+                <span class="glyphicon glyphicon-search ni_color-white"></span>
+            </button>
+            <button type="button" class="navbar-toggle navbar-btn ni_navbar-toggle" data-toggle="collapse" data-target=".ni_navbar-login">
+                <span class="glyphicon glyphicon-user ni_color-white"></span>
+            </button>
+            <h1><a class="ni_logo" href="/">New Internationalist</a></h1>
+            <h2 class="ni_text-hide">Putting the world to rights since 1973</h2>
+
+        </div>
+        <div class="collapse navbar-collapse ni_navbar-login">
+            <h3>New Internationalist Login</h3>
+            <p>Don't have an account? <a href="/dev/drupal-7.23/user/register" class="login-register" title="Create a new user account">Register now.</a></p>
+            <div class="ni_social-login">
+                <a href="#" class="ssbtn twitter">Sign in with Twitter</a>
+                <a href="#" class="ssbtn googleplus">Sign in with Google+</a>
+            </div>
+            <span class="ni_divider"></span>
+            <form action="/dev/drupal-7.23/node?destination=node" method="post" id="ni_user-login-form" accept-charset="UTF-8">
+                <div class="form-required form-group">
+                    <label class="required sr-only" for="edit-name">Username</label>
+                    <input class="form-control" placeholder="Username" type="text" id="edit-name" name="name" value="" maxlength="60" required />
+                </div>
+                <div class="form-required form-group">
+                    <label class="required sr-only" for="edit-pass">Password</label>
+                    <input class="form-control" placeholder="Password" type="password" id="edit-pass" name="pass" maxlength="128" required />
+
+                    <small><a href="/dev/drupal-7.23/user/password" class="login-password" title="Get a new password">Forgot password?</a></small>
+                </div>
+                <input type="hidden" name="form_build_id" value="form-a4G2MXVV3fJRx0Oxsf3nB7Y04myzNRRO6nIvwht_O5U" />
+                <input type="hidden" name="form_id" value="user_login_block" />
+                <div class="form-actions form-wrapper" id="edit-actions">
+                    <button class="btn btn-default" type="button" id="edit-submit" name="op">Login</button>
+                </div>
+            </form>
+            <div style="clear:both;"></div>
+        </div>
+        <div class="collapse navbar-collapse ni_navbar-search">
+            <form action="/dev/drupal-7.23/" method="post" class="navbar-form navbar-left" role="search" id="search-block-form" accept-charset="UTF-8">
+                <div class="input-group">
+                    <label class="element-invisible sr-only" for="edit-search-block-form--2">Search</label>
+                    <input class="form-control" title="Enter the terms you wish to search for." placeholder="Search" type="text" id="edit-search-block-form--2" name="search_block_form" value=""  />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" id="edit-submit" name="op">Search</button>
+                    </span>
+                </div>
+                <input type="hidden" name="form_build_id" value="form-NAxOm_qDUBk1fC3ChSw_y_Pgyvkwu6X4XH8MCkA61Ls" />
+                <input type="hidden" name="form_token" value="t5-xCi7NHYyXdRB32leTajpljPDdSTYwiohegSueFBk" />
+                <input type="hidden" name="form_id" value="search_block_form" />
+            </form>
+        </div>
+        <nav class="navbar-collapse ni_navbar-menu" role="navigation">
+        <div class="tabbable">
+            <ul class="nav nav-tabs">
+                <li class="ni_tab-mag active"><a href="#pane1" data-toggle="tab">Mag</a></li>
+                <li><a class="ni_tab-books" href="#pane2" data-toggle="tab">Books</a></li>
+                <li><a class="ni_tab-shop" href="#pane3" data-toggle="tab">Shop</a></li>
+                <li><a class="ni_tab-blog" href="#pane4" data-toggle="tab">Blog</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="pane1" class="tab-pane active">
+                    <ul id="tab-mag" class="ni_sub-nav nav nav-pills">
+                        <li><a href="#">Current Magazine <span class="ni_float-right">#473</span></a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Sections</a></li>
+                        <li><a href="#">Column</a></li>
+                        <li><a href="#">Regions</a></li>
+                        <li><a href="#">Countries</a></li>
+                        <li><a href="#">Magazine Archive</a></li>
+                        <li><a href="#">Link Text</a></li>
+                        
+                    </ul>   
+                </div>
+                <div id="pane2" class="tab-pane">
+                    <ul id="tab-mag" class="ni_sub-nav nav nav-pills">
+                        <li><a href="#">Latest Publications<span class="ni_float-right">92</span></a></li>
+                        <li><a href="#">All Books<span class="ni_float-right">2539</span></a></li>
+                        <li><a href="#">Maps &amp; Atlases<span class="ni_float-right">92</span></a></li>
+                        <li><a href="#">Educational Books<span class="ni_float-right">92</span></a></li>
+                        <li><a href="#">Fiction Books<span class="ni_float-right">92</span></a></li>
+                        <li><a href="#">Maps &amp; Atlases<span class="ni_float-right">92</span></a></li>
+                        <li><a href="#">Maps &amp; Atlases<span class="ni_float-right">92</span></a></li>
+                        <li><a href="#">Column</a></li>
+                        <li><a href="#">Regions</a></li>
+                        <li><a href="#">Countries</a></li>
+                        <li><a href="#">Magazine Archive</a></li>
+                        <li><a href="#">Link Text</a></li>
+                        
+                    </ul>
+                </div>
+                <div id="pane3" class="tab-pane">
+                        <h4>Pane 3 Content</h4>
+                </div>
+                <div id="pane4" class="tab-pane">
+                        <h4>Pane 4 Content</h4>
+                </div>
+            </div><!-- /.tab-content -->
+        </div><!-- /.tabbable -->
+            </nav>
+            <nav class="breadcrumb">
+            <ul>
+                <li>home</li>
+                <li>blog</li>
+            </ul>
+            </nav>
+            </header>
+            <main style="height:800px; width:100%;">
+            </main>
+        </body>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="../javascripts/bootstrap.min.js"></script>
+        <script src="../js/script.js"></script>
+
+    </html>
+

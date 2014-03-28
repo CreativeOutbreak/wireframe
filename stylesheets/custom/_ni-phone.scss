@@ -8,12 +8,17 @@ body
     //border-top:7px solid $brand-primary;
 }
 
+.ni_float-right {
+    float: right;
+}
+
 .ni_header
 {
     //@extend .row;
     background-color:$brand-primary;
-    padding: 5px 0;
-
+    padding: 5px 0 1px 0;
+    position: fixed;
+    width:100%;
 }
 
 .ni_header h1
@@ -25,7 +30,7 @@ body
 .ni_hgroup 
 {
     margin: 0;
-    padding: 0;
+    padding: 0 0 5px 0;
 }
 
 .ni_logo
@@ -42,18 +47,67 @@ body
 
 .ni_navbar-login, .ni_navbar-search, .ni_navbar-menu
 {
-    width: 100%;
+    width: 102%;
     background-color: #fff;
     padding: 8px 15px;
-    border-bottom: 1px solid #ccc;
+
+    position: absolute;
+    left: -1%;
+    border: 3px solid rgb(160, 60, 60);
+    top: 50px;
 }
 
 
 .ni_sub-nav li
 {
-    width: 45%;
+    width: 100%;
     margin-right: 4%;
     border-bottom: 1px solid rgba(0,0,0,0.05);
+    font-weight: bold;
+}
+
+.ni_tab-mag {
+    background-color: rgb(215, 90, 0);
+    color: rgb(255, 255, 255);
+}
+
+.ni_tab-books {
+    background-color: rgb(215, 90, 0);
+    color: rgb(255, 255, 255);
+}
+
+.ni_tab-shop {
+    background-color: rgb(50, 110, 150);
+    color: rgb(255, 255, 255);
+}
+
+.ni_tab-blog {
+    background-color: rgb(85, 110, 5);
+    color: rgb(255, 255, 255);
+}
+
+.active {
+    border-width: 2px 2px 0px;
+    border-style: solid solid none;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.ni_tab-mag > .active {
+    border-color: rgb(160, 60, 60);
+}
+
+.ni_tab-books .active {
+    border-color: rgb(215, 90, 0);
+}
+
+.ni_tab-shop .active {
+    border-color: rgb(50, 110, 150);
+}
+
+.ni_tab-blog .active {
+    border-color: rgb(85, 110, 5);
 }
 
 #carousel
