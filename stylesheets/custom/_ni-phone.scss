@@ -67,7 +67,7 @@ body
 }
 
 .ni_tab-mag {
-    background-color: rgb(215, 90, 0);
+    background-color: rgb(160, 60, 60);
     color: rgb(255, 255, 255);
 }
 
@@ -86,28 +86,32 @@ body
     color: rgb(255, 255, 255);
 }
 
-.active {
-    border-width: 2px 2px 0px;
-    border-style: solid solid none;
-    font-weight: bold;
-    background-color: rgb(255, 255, 255);
+.ni_navbar-menu .active > a {
+    border-width: 2px 2px 0px !important;
+    border-style: solid solid none !important;
+    font-weight: bold !important;
+    background-color: rgb(255, 255, 255) !important;
 }
 
 
-.ni_tab-mag > .active {
-    border-color: rgb(160, 60, 60);
+.active a.ni_tab-mag  {
+    border-color: rgb(160, 60, 60) !important;
+    color: rgb(160, 60, 60) !important;
 }
 
-.ni_tab-books .active {
-    border-color: rgb(215, 90, 0);
+.active > a.ni_tab-books {
+    border-color: rgb(215, 90, 0) !important;
+    color: rgb(215, 90, 0) !important;
 }
 
-.ni_tab-shop .active {
-    border-color: rgb(50, 110, 150);
+.active > a.ni_tab-shop {
+    border-color: rgb(50, 110, 150) !important;
+    color: rgb(50, 110, 150) !important;
 }
 
-.ni_tab-blog .active {
-    border-color: rgb(85, 110, 5);
+.active > a.ni_tab-blog  {
+    border-color: rgb(85, 110, 5) !important;
+    color: rgb(85, 110, 5) !important;
 }
 
 #carousel
