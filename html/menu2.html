@@ -87,28 +87,32 @@
         </div>
         <nav class="navbar-collapse ni_navbar-menu" role="navigation">
         <div class="tabbable">
-            <ul class="nav nav-tabs">
-                <li class="active"><a class="ni_tab-mag" href="#pane1" data-toggle="tab">Mag</a></li>
-                <li><a class="ni_tab-books" href="#pane2" data-toggle="tab">Books</a></li>
-                <li><a class="ni_tab-shop" href="#pane3" data-toggle="tab">Shop</a></li>
-                <li><a class="ni_tab-blog" href="#pane4" data-toggle="tab">Blog</a></li>
+            <ul id="ni_menu-tab" class="nav nav-tabs">
+                <li class="active"><a class="ni_tab-mag" href="#ni_pan-mag" data-toggle="tab">Mag</a></li>
+                <li><a class="ni_tab-books" href="#ni_pan-books" data-toggle="tab">Books</a></li>
+                <li><a class="ni_tab-shop" href="#ni_pan-shop" data-toggle="tab">Shop</a></li>
+                <li><a class="ni_tab-blog" href="#ni_pan-blog" data-toggle="tab">Blog</a></li>
             </ul>
             <div class="tab-content">
-                <div id="pane1" class="tab-pane active">
-                    <ul id="tab-mag" class="ni_sub-nav nav nav-pills">
+                <div id="ni_pan-mag" class="tab-pane active">
+                    <ul class="ni_sub-nav nav">
                         <li><a href="#">Current Magazine <span class="ni_float-right">#473</span></a></li>
+                        <li><a href="#">Subscribe Now <span class="ni_float-right">from £2/pm</span></a></li>
                         <li><a href="#">Features</a></li>
-                        <li><a href="#">Sections</a></li>
-                        <li><a href="#">Column</a></li>
-                        <li><a href="#">Regions</a></li>
-                        <li><a href="#">Countries</a></li>
+                        <li><a href="#">Sections <span class="glyphicon glyphicon-plus ni_float-right"></span></a>
+                            <ul class="ni_sub-nav nav nav-pills" style="display:none;">
+                                <li><a href="#">Link 1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Column <span class="glyphicon glyphicon-plus ni_float-right"></span></a></li>
+                        <li><a href="#">Regions <span class="glyphicon glyphicon-plus ni_float-right"></span></a></li>
+                        <li><a href="#">Countries <span class="glyphicon glyphicon-plus ni_float-right"></span></a></li>
                         <li><a href="#">Magazine Archive</a></li>
-                        <li><a href="#">Link Text</a></li>
                         
                     </ul>   
                 </div>
-                <div id="pane2" class="tab-pane">
-                    <ul id="tab-mag" class="ni_sub-nav nav nav-pills">
+                <div id="ni_pan-books" class="tab-pane">
+                    <ul class="ni_sub-nav nav">
                         <li><a href="#">Latest Publications<span class="ni_float-right">92</span></a></li>
                         <li><a href="#">All Books<span class="ni_float-right">2539</span></a></li>
                         <li><a href="#">Maps &amp; Atlases<span class="ni_float-right">92</span></a></li>
@@ -116,18 +120,13 @@
                         <li><a href="#">Fiction Books<span class="ni_float-right">92</span></a></li>
                         <li><a href="#">Maps &amp; Atlases<span class="ni_float-right">92</span></a></li>
                         <li><a href="#">Maps &amp; Atlases<span class="ni_float-right">92</span></a></li>
-                        <li><a href="#">Column</a></li>
-                        <li><a href="#">Regions</a></li>
-                        <li><a href="#">Countries</a></li>
-                        <li><a href="#">Magazine Archive</a></li>
-                        <li><a href="#">Link Text</a></li>
                         
                     </ul>
                 </div>
-                <div id="pane3" class="tab-pane">
+                <div id="ni_pan-shop" class="tab-pane">
                         <h4>Pane 3 Content</h4>
                 </div>
-                <div id="pane4" class="tab-pane">
+                <div id="ni_pan-blog" class="tab-pane">
                         <h4>Pane 4 Content</h4>
                 </div>
             </div><!-- /.tab-content -->

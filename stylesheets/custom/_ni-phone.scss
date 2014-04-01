@@ -2,11 +2,17 @@
 // Custom CSS (Normal CSS file)  - New Internationalist CMS Templates 2014 - Peter Stewart (pete.stewart@newint.org)
 // --------------------------------------------------------------------------------------------------------------------
 
+
 body
 {
     border-top: none;
     //border-top:7px solid $brand-primary;
 }
+
+a:focus {
+    outline: none;
+}
+
 
 .ni_float-right {
     float: right;
@@ -53,10 +59,14 @@ body
 
     position: absolute;
     left: -1%;
-    border: 3px solid rgb(160, 60, 60);
+    /* border: 3px solid rgb(160, 60, 60);*/
     top: 50px;
 }
 
+.ni_navbar-menu
+{
+    padding: 8px 0;
+}
 
 .ni_sub-nav li
 {
@@ -66,24 +76,32 @@ body
     font-weight: bold;
 }
 
+#ni_menu-tab {
+    padding-left:3px;
+}
+
 .ni_tab-mag {
-    background-color: rgb(160, 60, 60);
+    background-color: $brand-primary;
     color: rgb(255, 255, 255);
 }
 
 .ni_tab-books {
-    background-color: rgb(215, 90, 0);
+    background-color: $book-primary;
     color: rgb(255, 255, 255);
 }
 
 .ni_tab-shop {
-    background-color: rgb(50, 110, 150);
+    background-color: $shop-primary;
     color: rgb(255, 255, 255);
 }
 
 .ni_tab-blog {
-    background-color: rgb(85, 110, 5);
+    background-color: $blog-primary;
     color: rgb(255, 255, 255);
+}
+
+.ni_navbar-menu li.active {
+    z-index: 10;
 }
 
 .ni_navbar-menu .active > a {
@@ -95,23 +113,50 @@ body
 
 
 .active a.ni_tab-mag  {
-    border-color: rgb(160, 60, 60) !important;
-    color: rgb(160, 60, 60) !important;
+    border-color: $brand-primary !important;
+    color: $brand-primary !important;
 }
 
 .active > a.ni_tab-books {
-    border-color: rgb(215, 90, 0) !important;
-    color: rgb(215, 90, 0) !important;
+    border-color: $book-primary !important;
+    color: $book-primary !important;
 }
 
 .active > a.ni_tab-shop {
-    border-color: rgb(50, 110, 150) !important;
-    color: rgb(50, 110, 150) !important;
+    border-color: $shop-primary !important;
+    color: $shop-primary !important;
 }
 
 .active > a.ni_tab-blog  {
-    border-color: rgb(85, 110, 5) !important;
-    color: rgb(85, 110, 5) !important;
+    border-color: $blog-primary !important;
+    color: $blog-primary !important;
+}
+
+#ni_pan-mag, #ni_pan-books, #ni_pan-shop, #ni_pan-blog  {
+    position: relative;
+    top: -3px;
+    @include box-shadow(0 0 5px rgba(0,0,0,0.5));
+    border-width: 3px 0 2px 0;
+    border-style: solid;
+
+    overflow-y: auto;
+    max-height: 333px;  
+}
+
+#ni_pan-mag  {
+    border-color: $brand-primary;
+}
+
+#ni_pan-books  {
+    border-color: $book-primary;
+}
+
+#ni_pan-shop  {
+    border-color: $shop-primary;
+}
+
+#ni_pan-blog  {
+    border-color: $blog-primary;
 }
 
 #carousel

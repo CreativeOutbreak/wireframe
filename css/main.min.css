@@ -4111,7 +4111,7 @@ tbody.collapse.in {
     float: left; } }
 
 .navbar-collapse {
-  max-height: 380px;
+  max-height: 400px;
   overflow-x: visible;
   padding-right: 15px;
   padding-left: 15px;
@@ -5934,6 +5934,9 @@ button.close {
 body {
   border-top: none; }
 
+a:focus {
+  outline: none; }
+
 .ni_float-right {
   float: right; }
 
@@ -5960,14 +5963,20 @@ body {
   padding: 8px 15px;
   position: absolute;
   left: -1%;
-  border: 3px solid #a03c3c;
+  /* border: 3px solid rgb(160, 60, 60);*/
   top: 50px; }
+
+.ni_navbar-menu {
+  padding: 8px 0; }
 
 .ni_sub-nav li {
   width: 100%;
   margin-right: 4%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   font-weight: bold; }
+
+#ni_menu-tab {
+  padding-left: 3px; }
 
 .ni_tab-mag {
   background-color: #a03c3c;
@@ -5984,6 +5993,9 @@ body {
 .ni_tab-blog {
   background-color: #556e05;
   color: white; }
+
+.ni_navbar-menu li.active {
+  z-index: 10; }
 
 .ni_navbar-menu .active > a {
   border-width: 2px 2px 0px !important;
@@ -6006,6 +6018,28 @@ body {
 .active > a.ni_tab-blog {
   border-color: #556e05 !important;
   color: #556e05 !important; }
+
+#ni_pan-mag, #ni_pan-books, #ni_pan-shop, #ni_pan-blog {
+  position: relative;
+  top: -3px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-width: 3px 0 2px 0;
+  border-style: solid;
+  overflow-y: auto;
+  max-height: 330px; }
+
+#ni_pan-mag {
+  border-color: #a03c3c; }
+
+#ni_pan-books {
+  border-color: #d75a00; }
+
+#ni_pan-shop {
+  border-color: #326e96; }
+
+#ni_pan-blog {
+  border-color: #556e05; }
 
 #carousel {
   max-width: 600px;
