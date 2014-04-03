@@ -6027,7 +6027,7 @@ a:focus {
   border-width: 3px 0 2px 0;
   border-style: solid;
   overflow-y: auto;
-  max-height: 330px; }
+  max-height: 333px; }
 
 #ni_pan-mag {
   border-color: #a03c3c; }
@@ -6040,6 +6040,10 @@ a:focus {
 
 #ni_pan-blog {
   border-color: #556e05; }
+
+.ni_droplet a {
+  padding-left: 30px !important;
+  font-size: 12px; }
 
 #carousel {
   max-width: 600px;

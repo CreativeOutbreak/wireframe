@@ -86,12 +86,12 @@
             </form>
         </div>
         <nav class="navbar-collapse ni_navbar-menu" role="navigation">
-        <div class="tabbable">
+        <div class="ni_tabs">
             <ul id="ni_menu-tab" class="nav nav-tabs">
-                <li class="active"><a class="ni_tab-mag" href="#ni_pan-mag" data-toggle="tab">Mag</a></li>
-                <li><a class="ni_tab-books" href="#ni_pan-books" data-toggle="tab">Books</a></li>
-                <li><a class="ni_tab-shop" href="#ni_pan-shop" data-toggle="tab">Shop</a></li>
-                <li><a class="ni_tab-blog" href="#ni_pan-blog" data-toggle="tab">Blog</a></li>
+                <li class="active"><a class="ni_tab-mag" href="#ni_pan-mag" data-ni_tab="true" data-ni_tab-id="#ni_pan-mag">Mag</a></li>
+                <li><a class="ni_tab-books" href="#ni_pan-books" data-ni_tab="true" data-ni_tab-id="#ni_pan-books">Books</a></li>
+                <li><a class="ni_tab-shop" href="#ni_pan-shop" data-ni_tab="true" data-ni_tab-id="#ni_pan-shop">Shop</a></li>
+                <li><a class="ni_tab-blog" href="#ni_pan-blog" data-ni_tab="true" data-ni_tab-id="#ni_pan-blog">Blog</a></li>
             </ul>
             <div class="tab-content">
                 <div id="ni_pan-mag" class="tab-pane active">
@@ -99,15 +99,37 @@
                         <li><a href="#">Current Magazine <span class="ni_float-right">#473</span></a></li>
                         <li><a href="#">Subscribe Now <span class="ni_float-right">from £2/pm</span></a></li>
                         <li><a href="#">Features</a></li>
-                        <li><a href="#">Sections <span class="glyphicon glyphicon-plus ni_float-right"></span></a>
-                            <ul class="ni_sub-nav nav nav-pills" style="display:none;">
+                        <li class="ni_drop">
+                            <a href="#">Web Exclusives</a>
+                            <ul class="ni_sub-nav nav ni_droplet">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 1</a></li>
                                 <li><a href="#">Link 1</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Column <span class="glyphicon glyphicon-plus ni_float-right"></span></a></li>
-                        <li><a href="#">Regions <span class="glyphicon glyphicon-plus ni_float-right"></span></a></li>
-                        <li><a href="#">Countries <span class="glyphicon glyphicon-plus ni_float-right"></span></a></li>
-                        <li><a href="#">Magazine Archive</a></li>
+                        <li class="ni_drop">
+                            <a href="#">Column</a>
+                            <ul class="ni_sub-nav nav ni_droplet">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 1</a></li>
+                            </ul>
+                        </li>
+                        <li class="ni_drop">
+                            <a href="#">Regions</a>
+                        </li>
+                        <li class="ni_drop">
+                            <a href="#">Countries</a>
+                        </li>
+                        <li>
+                            <a href="#">Magazine Archive</a>
+                        </li>
                         
                     </ul>   
                 </div>
@@ -143,7 +165,10 @@
             </main>
         </body>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-        <script src="../javascripts/bootstrap.min.js"></script>
+        <!-- <script src="../javascripts/bootstrap.min.js"></script> -->
+        <script src="../jquery/contrib/jquery.breakpoint-min.js"></script>
+        <script src="../jquery/custom/ni_dropdown.js"></script>
+        <script src="../jquery/custom/ni_tabs.js"></script>
         <script src="../js/script.js"></script>
 
     </html>

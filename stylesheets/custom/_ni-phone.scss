@@ -159,6 +159,11 @@ a:focus {
     border-color: $blog-primary;
 }
 
+.ni_droplet a {
+    padding-left: 30px !important;
+    font-size: 12px;
+}
+
 #carousel
 {
     max-width: 600px;
