@@ -30,11 +30,11 @@
         <header class="ni_header navbar">
         <div class="ni_hgroup ni_menu">
             <span class="divider-vertical"></span>
-            <button type="button" class="navbar-toggle navbar-btn ni_navbar-toggle" data-ni_menu="slide,right" data-ni_target=".ni_navbar-menu">
+            <button type="button" class="navbar-toggle navbar-btn ni_navbar-toggle" data-ni_menu="slide" data-ni_target=".ni_navbar-menu">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="glyphicon glyphicon-show_lines ni_color-white"></span>
             </button>
-            <button type="button" class="navbar-toggle navbar-btn ni_navbar-toggle" data-ni_menu="slide,right" data-ni_target=".ni_navbar-search">
+            <button type="button" class="navbar-toggle navbar-btn ni_navbar-toggle" data-ni_menu="drop" data-ni_target=".ni_navbar-search" data-ni_css-out="ni_menu-up">
                 <span class="glyphicon glyphicon-search ni_color-white"></span>
             </button>
             <button type="button" class="navbar-toggle navbar-btn ni_navbar-toggle" data-ni_menu="slide,right" data-ni_target=".ni_navbar-login">
@@ -85,7 +85,7 @@
                 <input type="hidden" name="form_id" value="search_block_form" />
             </form>
         </div>
-        <nav class="ni_navbar-menu" role="navigation">
+        <nav class="ni_navbar-menu ni_menu-in" role="navigation">
         <div class="ni_tabs">
             <ul id="ni_menu-tab" class="nav nav-tabs">
                 <li class="active"><a class="ni_tab-mag" href="#ni_pan-mag" data-ni_tab="true" data-ni_target="#ni_pan-mag">Mag</a></li>
@@ -154,13 +154,14 @@
             </div><!-- /.tab-content -->
         </div><!-- /.tabbable -->
             </nav>
-            <nav class="breadcrumb">
-            <ul>
-                <li>home</li>
-                <li>blog</li>
-            </ul>
-            </nav>
+            
             </header>
+            <nav>
+            <ol class="breadcrumb">
+                <li><a href="#">home</a></li>
+                <li class="active">blog</li>
+            </ol>
+            </nav>
             <main style="height:800px; width:100%;">
             </main>
         </body>

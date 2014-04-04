@@ -4431,11 +4431,10 @@ tbody.collapse.in {
       color: #444444; }
 
 .breadcrumb {
-  padding: 8px 15px;
+  padding: 3px 15px;
   margin-bottom: 20px;
   list-style: none;
-  background-color: whitesmoke;
-  border-radius: 4px; }
+  background-color: whitesmoke; }
   .breadcrumb > li {
     display: inline-block; }
     .breadcrumb > li + li:before {
@@ -5931,6 +5930,10 @@ button.close {
   width: 40px;
   background-position: 0px 0px; }
 
+.breadcrumb {
+  position: relative;
+  top: 53px; }
+
 body {
   border-top: none; }
 
@@ -5944,6 +5947,7 @@ a:focus {
   background-color: #a03c3c;
   padding: 5px 0 1px 0;
   position: fixed;
+  z-index: 10;
   width: 100%; }
 
 .ni_header h1 {
@@ -5963,7 +5967,7 @@ a:focus {
   padding: 8px 15px;
   position: absolute;
   /* border: 3px solid rgb(160, 60, 60);*/
-  top: 50px; }
+  top: 3.8em; }
 
 .ni_navbar-menu {
   padding: 8px 0; }
@@ -6171,10 +6175,15 @@ blockquote:before {
   border-bottom: 2px solid #c23928 !important; }
 
 .ni_menu-in {
-  right: 1%; }
+  right: -1%; }
 
 .ni_menu-out {
   right: 110%; }
+
+.ni_menu-up {
+  height: 0;
+  overflow: hidden;
+  padding: 0; }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
   #ni_pan-mag, #ni_pan-books, #ni_pan-shop, #ni_pan-blog {

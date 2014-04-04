@@ -1,7 +1,13 @@
 .ni_menu-in {
-    right: 1%;
+    right: -1%;
 }
 
 .ni_menu-out {
     right: 110%;
+}
+
+.ni_menu-up {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
 }

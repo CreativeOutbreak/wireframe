@@ -24,6 +24,7 @@ a:focus {
     background-color:$brand-primary;
     padding: 5px 0 1px 0;
     position: fixed;
+    z-index: 10;
     width:100%;
 }
 
@@ -60,7 +61,7 @@ a:focus {
     position: absolute;
     // left: -1%;
     /* border: 3px solid rgb(160, 60, 60);*/
-    top: 50px;
+    top: 3.8em;
 }
 
 .ni_navbar-menu
