@@ -1,7 +1,8 @@
 function init() {
     $('.ni_tabs').ni_tabs();
     $('.ni_drop').ni_dropdown({addGlyphicon: [true, ['glyphicon-plus','glyphicon-minus', 'ni_float-right'], '<span>']});
-    console.log('loaded');
+    $('.ni_menu').ni_menu();
+    dbug('loaded');
 }
 
 $.breakpoint((function () {

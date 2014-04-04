@@ -9,6 +9,8 @@
 // Core bootstrap sass file import. 
 @import "bootstrap/bootstrap";
 
+// 320 and up scss files
+//@import "320andup-custom/320andup-scss";
 
 // Custom variables
 @import "custom/ni-variables";
@@ -23,12 +25,53 @@
 // Smallest phone css - this is basically the defualt css.
 @import "custom/ni-phone";
 
-// This is the media query css for tablet devices
-@import "custom/ni-tablet-mq";
-
-// This is the media query css for desktops
-@import "custom/ni-desktop-mq";
-
 
 // Social media login buttons
 @import "custom/ni-ssbtn";
+
+// jquery css
+@import "custom/ni-menu-jquery";
+
+@media print {
+    @import "custom/ni-print";
+}
+
+// phone landscape
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    @import "custom/ni-phone-landscape";
+}
+
+// 480px
+@media only screen and (min-width: 480px) {
+    @import "custom/ni-480";
+}
+
+// 600px
+@media only screen and (min-width: 600px) {
+    @import "custom/ni-600";
+}
+
+// 768px
+@media only screen and (min-width: 768px) {
+    @import "custom/ni-768";
+}
+
+// 992px
+@media only screen and (min-width: 992px) {
+    @import "custom/ni-992";
+}
+
+// 1382px
+@media only screen and (min-width: 1382px) {
+    @import "custom/ni-1382";
+}
+
+// 2x
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    @import "custom/ni-2x"; 
+}
+
+

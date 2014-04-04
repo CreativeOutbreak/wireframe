@@ -8,7 +8,7 @@
         }, options );
 
         return this.each(function(i) {
-            console.log(settings.data);
+            dbug(settings.data);
             ni_tablist[i] = $('*[data-ni_tab="true"]', this);
             ni_tablist[i].each(function() {
                 $(this).on('click', ni_tabClick);
@@ -24,10 +24,10 @@
         ni_tablist[tn].each(function() {
             var $t = $(this);
             $t.parent().removeClass('active');
-            $($t.data('ni_tab-id')).removeClass('active');
+            $($t.data('ni_target')).removeClass('active');
         });
         $this.parent().addClass('active');
-        $($this.data('ni_tab-id')).addClass('active');
+        $($this.data('ni_target')).addClass('active');
         return false;   
     }
 }( jQuery ));

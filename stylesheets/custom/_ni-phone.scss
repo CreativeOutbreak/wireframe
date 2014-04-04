@@ -58,7 +58,7 @@ a:focus {
     padding: 8px 15px;
 
     position: absolute;
-    left: -1%;
+    // left: -1%;
     /* border: 3px solid rgb(160, 60, 60);*/
     top: 50px;
 }
@@ -145,18 +145,32 @@ a:focus {
 
 #ni_pan-mag  {
     border-color: $brand-primary;
+    color: $brand-primary;
 }
 
 #ni_pan-books  {
     border-color: $book-primary;
+    color: $book-primary;
+}
+
+#ni_pan-books a  {
+    color: $book-primary;
 }
 
 #ni_pan-shop  {
     border-color: $shop-primary;
 }
 
+#ni_pan-shop a {
+    color: $shop-primary;
+}
+
 #ni_pan-blog  {
     border-color: $blog-primary;
+}
+
+#ni_pan-blog a {
+    color: $blog-primary;
 }
 
 .ni_droplet a {

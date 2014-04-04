@@ -28,23 +28,23 @@
     </head>
     <body>
         <header class="ni_header navbar">
-        <div class="ni_hgroup">
+        <div class="ni_hgroup ni_menu">
             <span class="divider-vertical"></span>
-            <button type="button" class="navbar-toggle navbar-btn ni_navbar-toggle" data-toggle="collapse" data-target=".ni_navbar-menu">
+            <button type="button" class="navbar-toggle navbar-btn ni_navbar-toggle" data-ni_menu="slide,right" data-ni_target=".ni_navbar-menu">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="glyphicon glyphicon-show_lines ni_color-white"></span>
             </button>
-            <button type="button" class="navbar-toggle navbar-btn ni_navbar-toggle" data-toggle="collapse" data-target=".ni_navbar-search">
+            <button type="button" class="navbar-toggle navbar-btn ni_navbar-toggle" data-ni_menu="slide,right" data-ni_target=".ni_navbar-search">
                 <span class="glyphicon glyphicon-search ni_color-white"></span>
             </button>
-            <button type="button" class="navbar-toggle navbar-btn ni_navbar-toggle" data-toggle="collapse" data-target=".ni_navbar-login">
+            <button type="button" class="navbar-toggle navbar-btn ni_navbar-toggle" data-ni_menu="slide,right" data-ni_target=".ni_navbar-login">
                 <span class="glyphicon glyphicon-user ni_color-white"></span>
             </button>
             <h1><a class="ni_logo" href="/">New Internationalist</a></h1>
             <h2 class="ni_text-hide">Putting the world to rights since 1973</h2>
 
         </div>
-        <div class="collapse navbar-collapse ni_navbar-login">
+        <div class="ni_navbar-login">
             <h3>New Internationalist Login</h3>
             <p>Don't have an account? <a href="/dev/drupal-7.23/user/register" class="login-register" title="Create a new user account">Register now.</a></p>
             <div class="ni_social-login">
@@ -71,7 +71,7 @@
             </form>
             <div style="clear:both;"></div>
         </div>
-        <div class="collapse navbar-collapse ni_navbar-search">
+        <div class="ni_navbar-search">
             <form action="/dev/drupal-7.23/" method="post" class="navbar-form navbar-left" role="search" id="search-block-form" accept-charset="UTF-8">
                 <div class="input-group">
                     <label class="element-invisible sr-only" for="edit-search-block-form--2">Search</label>
@@ -85,13 +85,13 @@
                 <input type="hidden" name="form_id" value="search_block_form" />
             </form>
         </div>
-        <nav class="navbar-collapse ni_navbar-menu" role="navigation">
+        <nav class="ni_navbar-menu" role="navigation">
         <div class="ni_tabs">
             <ul id="ni_menu-tab" class="nav nav-tabs">
-                <li class="active"><a class="ni_tab-mag" href="#ni_pan-mag" data-ni_tab="true" data-ni_tab-id="#ni_pan-mag">Mag</a></li>
-                <li><a class="ni_tab-books" href="#ni_pan-books" data-ni_tab="true" data-ni_tab-id="#ni_pan-books">Books</a></li>
-                <li><a class="ni_tab-shop" href="#ni_pan-shop" data-ni_tab="true" data-ni_tab-id="#ni_pan-shop">Shop</a></li>
-                <li><a class="ni_tab-blog" href="#ni_pan-blog" data-ni_tab="true" data-ni_tab-id="#ni_pan-blog">Blog</a></li>
+                <li class="active"><a class="ni_tab-mag" href="#ni_pan-mag" data-ni_tab="true" data-ni_target="#ni_pan-mag">Mag</a></li>
+                <li><a class="ni_tab-books" href="#ni_pan-books" data-ni_tab="true" data-ni_target="#ni_pan-books">Books</a></li>
+                <li><a class="ni_tab-shop" href="#ni_pan-shop" data-ni_tab="true" data-ni_target="#ni_pan-shop">Shop</a></li>
+                <li><a class="ni_tab-blog" href="#ni_pan-blog" data-ni_tab="true" data-ni_target="#ni_pan-blog">Blog</a></li>
             </ul>
             <div class="tab-content">
                 <div id="ni_pan-mag" class="tab-pane active">
@@ -165,10 +165,13 @@
             </main>
         </body>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
         <!-- <script src="../javascripts/bootstrap.min.js"></script> -->
         <script src="../jquery/contrib/jquery.breakpoint-min.js"></script>
+        <script src="../js/debug.js"></script>
         <script src="../jquery/custom/ni_dropdown.js"></script>
         <script src="../jquery/custom/ni_tabs.js"></script>
+        <script src="../jquery/custom/ni_menu.js"></script>
         <script src="../js/script.js"></script>
 
     </html>

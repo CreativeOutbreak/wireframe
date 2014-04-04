@@ -25,10 +25,9 @@
                 var $ul = $('ul', this);
                 if(settings.hideClass[0]) { 
                     $ul.addClass(settings.hideClass[1]);
-                    console.log(settings.hideClass[0]);
+                    dbug(settings.hideClass[0]);
                 }
                 else {
-                    console.log('rereer');
                     $ul.hide();
                 }
                 
@@ -41,7 +40,6 @@
         var $t = $(e.target);
         var $p = $t.parent();
         var s = $t.data('ni_dropdown-settings');
-        console.log(s);
         if(s.toggleDisplay[0]) {
             var y = $('ul', $p).toggle();
             if(y[0].clientHeight === 0) {
