@@ -1,8 +1,10 @@
+$.hisrc.speedTest();
 function init() {
     $('.ni_tabs').ni_tabs();
     $('.ni_drop').ni_dropdown({addGlyphicon: [true, ['glyphicon-plus','glyphicon-minus', 'ni_float-right'], '<span>']});
     $('.ni_menu').ni_menu();
     dbug('loaded');
+    $('.ni_rwd-img').hisrc();
 }
 
 $.breakpoint((function () {

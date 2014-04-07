@@ -16,8 +16,12 @@
                 var t = $t.data('ni_target');
                 var css_out = $t.attr('data-ni_css-out') ? $t.attr('data-ni_css-out') : settings.css_out;
                 $(t).addClass(css_out);
+                 
                 $t.on('click', ni_menuSlide);
-                $t.data('ni_i-num',i);
+                $('span', this).on('click', function() { $(this).parent().trigger('click'); return false; });
+                $t.data('ni-i-num',i);
+                
+                dbug('i = '+i);
                 $t.data('ni_settings',settings);
             });
             // Do something to each element here.
@@ -28,7 +32,8 @@
         var $t = $(e.target);
         var t = $t.data('ni_target');
         var s = $t.data('ni_settings');
-        var i = $t.data('ni_i-num');
+        var i = $t.data('ni-i-num');
+        dbug($t);
         ni_menulist[i].each(function(){
             var $tt = $(this);
             var tt = $tt.data('ni_target');
@@ -37,8 +42,10 @@
             var easing = $tt.attr('data-ni_easing') ? $tt.attr('data-ni_easing') : s.easing;
             if(t != tt) {
                 if(!$(tt).hasClass(css_out)) $(tt).addClass(css_out, d, easing );
+                $tt.removeClass('ni_selected');
             } else {
                 $(tt).toggleClass(css_out, d, easing );
+                $tt.toggleClass('ni_selected');
             }
         });  
         return false;   

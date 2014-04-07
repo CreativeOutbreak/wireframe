@@ -7,7 +7,7 @@ $book-primary:         rgb(215, 90, 0);
 $shop-primary:         rgb(50, 110, 150);
 $blog-primary:         rgb(85, 110, 5);
 
-
+$ni_light-gray: rgba(0,0,0,0.2);
 
 
 // Global values
@@ -50,39 +50,6 @@ $ni_div-margin-bottom: 20px;
 $ni_cmq-size: 610px;
 
 
-// Media queries breakpoints -- Taken from old bootstrap variable.less - Pete 
-// --------------------------------------------------
-
-// Tiny screen / phone
-$screen-tiny:                480px;
-$screen-phone:               $screen-tiny;
-
-// Phone portrait - added by Pete
-$screen-phone-portrait:      320px;
-// Large Phone - added by Pete
-$screen-large-phone:         360px;
-
-// Small tablet - added by Pete
-$screen-small-tablet:        640px;
-
-// Small screen / tablet
-$screen-small:               768px;
-$screen-tablet:              $screen-small;
-
-// Medium screen / desktop
-$screen-medium:              992px;
-$screen-desktop:             $screen-medium;
-
-// Large screen / wide desktop
-$screen-large:               1200px;
-$screen-large-desktop:       $screen-large;
-
-// So media queries don't overlap when required, provide a maximum
-$screen-small-max:           ($screen-medium - 1);
-$screen-tablet-max:          $screen-small-max;
-
-$screen-medium-max:           ($screen-large - 1);
-$screen-desktop-max:          $screen-medium-max;
 
 
  

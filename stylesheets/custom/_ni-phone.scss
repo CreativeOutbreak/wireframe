@@ -9,10 +9,28 @@ body
     //border-top:7px solid $brand-primary;
 }
 
+#ni_main {
+    height:800px;
+    width:100%;
+    margin-top:90px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 a:focus {
     outline: none;
 }
 
+
+.ni_selected {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.16) inset;
+    border:1px solid rgba(0,0,0,0.2)
+}
 
 .ni_float-right {
     float: right;
@@ -26,6 +44,7 @@ a:focus {
     position: fixed;
     z-index: 10;
     width:100%;
+    top: 0;
 }
 
 .ni_header h1
@@ -62,6 +81,10 @@ a:focus {
     // left: -1%;
     /* border: 3px solid rgb(160, 60, 60);*/
     top: 3.8em;
+}
+
+.ni_navbar-search {
+    border-bottom: 3px solid $brand-primary;
 }
 
 .ni_navbar-menu
@@ -231,6 +254,15 @@ blockquote:before
     font-weight:bold;
 }
 
+.ni_blog-article-list {
+    width: 95%;
+    margin: auto;
+}
+
+.ni_blog-article-list h1 {
+    font-size: 2em;
+}
+
 //.ni_awards cite
 //{
     //    display: block;
@@ -270,9 +302,9 @@ blockquote:before
 
 .ni_navbar-toggle
 {
-    margin-top: 2px;
+    margin-top: 0;
     margin-bottom: 0px;
-    padding: 4px 8px;
+    padding: 9px 12px 5px;
     font-size: 18px;
 }
 

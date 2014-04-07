@@ -4430,18 +4430,18 @@ tbody.collapse.in {
     .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse .btn-link[disabled]:focus, fieldset[disabled] .navbar-inverse .btn-link:hover, fieldset[disabled] .navbar-inverse .btn-link:focus {
       color: #444444; }
 
-.breadcrumb {
+.breadcrumb, .ni_breadcrumb {
   padding: 3px 15px;
   margin-bottom: 20px;
   list-style: none;
   background-color: whitesmoke; }
-  .breadcrumb > li {
+  .breadcrumb > li, .ni_breadcrumb > li {
     display: inline-block; }
-    .breadcrumb > li + li:before {
+    .breadcrumb > li + li:before, .ni_breadcrumb > li + li:before {
       content: "/\00a0";
       padding: 0 5px;
       color: #cccccc; }
-  .breadcrumb > .active {
+  .breadcrumb > .active, .ni_breadcrumb > .active {
     color: #999999; }
 
 .pagination {
@@ -4645,35 +4645,6 @@ a.list-group-item.active > .badge,
 
 .nav-pills > li > a > .badge {
   margin-left: 3px; }
-
-.jumbotron {
-  padding: 30px;
-  margin-bottom: 30px;
-  color: inherit;
-  background-color: #eeeeee; }
-  .jumbotron h1,
-  .jumbotron .h1 {
-    color: inherit; }
-  .jumbotron p {
-    margin-bottom: 15px;
-    font-size: 21px;
-    font-weight: 200; }
-  .jumbotron > hr {
-    border-top-color: #d5d5d5; }
-  .container .jumbotron {
-    border-radius: 6px; }
-  .jumbotron .container {
-    max-width: 100%; }
-  @media screen and (min-width: 768px) {
-    .jumbotron {
-      padding-top: 48px;
-      padding-bottom: 48px; }
-      .container .jumbotron {
-        padding-left: 60px;
-        padding-right: 60px; }
-      .jumbotron h1,
-      .jumbotron .h1 {
-        font-size: 63px; } }
 
 .thumbnail {
   display: block;
@@ -5930,15 +5901,33 @@ button.close {
   width: 40px;
   background-position: 0px 0px; }
 
-.breadcrumb {
-  position: relative;
-  top: 53px; }
+.breadcrumb, .ni_breadcrumb {
+  position: fixed;
+  top: 53px;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3); }
 
 body {
   border-top: none; }
 
+#ni_main {
+  height: 800px;
+  width: 100%;
+  margin-top: 90px; }
+
+img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
 a:focus {
   outline: none; }
+
+.ni_selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.16) inset;
+  border: 1px solid rgba(0, 0, 0, 0.2); }
 
 .ni_float-right {
   float: right; }
@@ -5948,7 +5937,8 @@ a:focus {
   padding: 5px 0 1px 0;
   position: fixed;
   z-index: 10;
-  width: 100%; }
+  width: 100%;
+  top: 0; }
 
 .ni_header h1 {
   margin: 0;
@@ -5968,6 +5958,9 @@ a:focus {
   position: absolute;
   /* border: 3px solid rgb(160, 60, 60);*/
   top: 3.8em; }
+
+.ni_navbar-search {
+  border-bottom: 3px solid #a03c3c; }
 
 .ni_navbar-menu {
   padding: 8px 0; }
@@ -6098,6 +6091,13 @@ blockquote:before {
   line-height: 16px;
   font-weight: bold; }
 
+.ni_blog-article-list {
+  width: 95%;
+  margin: auto; }
+
+.ni_blog-article-list h1 {
+  font-size: 2em; }
+
 .ni_footer {
   clear: both;
   height: 30px;
@@ -6122,9 +6122,9 @@ blockquote:before {
   font-size: 12px; }
 
 .ni_navbar-toggle {
-  margin-top: 2px;
+  margin-top: 0;
   margin-bottom: 0px;
-  padding: 4px 8px;
+  padding: 9px 12px 5px;
   font-size: 18px; }
 
 .ni_color-white {
@@ -6183,7 +6183,8 @@ blockquote:before {
 .ni_menu-up {
   height: 0;
   overflow: hidden;
-  padding: 0; }
+  padding: 0;
+  border: 0 none; }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
   #ni_pan-mag, #ni_pan-books, #ni_pan-shop, #ni_pan-blog {

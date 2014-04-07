@@ -44,7 +44,7 @@
             <h2 class="ni_text-hide">Putting the world to rights since 1973</h2>
 
         </div>
-        <div class="ni_navbar-login">
+        <div class="ni_navbar-login ni_menu-in">
             <h3>New Internationalist Login</h3>
             <p>Don't have an account? <a href="/dev/drupal-7.23/user/register" class="login-register" title="Create a new user account">Register now.</a></p>
             <div class="ni_social-login">
@@ -100,37 +100,37 @@
                         <li><a href="#">Subscribe Now <span class="ni_float-right">from £2/pm</span></a></li>
                         <li><a href="#">Features</a></li>
                         <li class="ni_drop">
-                            <a href="#">Web Exclusives</a>
-                            <ul class="ni_sub-nav nav ni_droplet">
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 1</a></li>
-                            </ul>
+                        <a href="#">Web Exclusives</a>
+                        <ul class="ni_sub-nav nav ni_droplet">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                        </ul>
                         </li>
                         <li class="ni_drop">
-                            <a href="#">Column</a>
-                            <ul class="ni_sub-nav nav ni_droplet">
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 1</a></li>
-                            </ul>
+                        <a href="#">Column</a>
+                        <ul class="ni_sub-nav nav ni_droplet">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                        </ul>
                         </li>
                         <li class="ni_drop">
-                            <a href="#">Regions</a>
+                        <a href="#">Regions</a>
                         </li>
                         <li class="ni_drop">
-                            <a href="#">Countries</a>
+                        <a href="#">Countries</a>
                         </li>
                         <li>
-                            <a href="#">Magazine Archive</a>
+                        <a href="#">Magazine Archive</a>
                         </li>
-                        
+
                     </ul>   
                 </div>
                 <div id="ni_pan-books" class="tab-pane">
@@ -142,38 +142,47 @@
                         <li><a href="#">Fiction Books<span class="ni_float-right">92</span></a></li>
                         <li><a href="#">Maps &amp; Atlases<span class="ni_float-right">92</span></a></li>
                         <li><a href="#">Maps &amp; Atlases<span class="ni_float-right">92</span></a></li>
-                        
+
                     </ul>
                 </div>
                 <div id="ni_pan-shop" class="tab-pane">
-                        <h4>Pane 3 Content</h4>
+                    <h4>Pane 3 Content</h4>
                 </div>
                 <div id="ni_pan-blog" class="tab-pane">
-                        <h4>Pane 4 Content</h4>
+                    <h4>Pane 4 Content</h4>
                 </div>
             </div><!-- /.tab-content -->
         </div><!-- /.tabbable -->
-            </nav>
-            
-            </header>
-            <nav>
-            <ol class="breadcrumb">
-                <li><a href="#">home</a></li>
-                <li class="active">blog</li>
-            </ol>
-            </nav>
-            <main style="height:800px; width:100%;">
-            </main>
-        </body>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-        <!-- <script src="../javascripts/bootstrap.min.js"></script> -->
-        <script src="../jquery/contrib/jquery.breakpoint-min.js"></script>
-        <script src="../js/debug.js"></script>
-        <script src="../jquery/custom/ni_dropdown.js"></script>
-        <script src="../jquery/custom/ni_tabs.js"></script>
-        <script src="../jquery/custom/ni_menu.js"></script>
-        <script src="../js/script.js"></script>
+        </nav>
 
-    </html>
+        </header>
+        <nav>
+        <ol class="breadcrumb">
+            <li><a href="#">home</a></li>
+            <li class="active">blog</li>
+        </ol>
+        </nav>
+        <main id="ni_main">
+            <article class="ni_blog-article-list">
+                <h1>Heading of the article</h1>
+                <figure>
+                    <img class="ni_rwd-img" src="../images/320x202.png" alt="latest blog" data-1x="../images/600x380.png" data-2x="../images/1200x760.png" />
+                    <figcaption>This is the blurb about the article.  It should probably be relevent to the image.<figcaption>
+                </figure>
+            </article> 
+        
+        </main>
+    </body>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <!-- <script src="../javascripts/bootstrap.min.js"></script> -->
+    <script src="../jquery/contrib/jquery.breakpoint-min.js"></script>
+    <script src="../js/debug.js"></script>
+    <script src="../js/hisrc.js"></script>
+    <script src="../jquery/custom/ni_dropdown.js"></script>
+    <script src="../jquery/custom/ni_tabs.js"></script>
+    <script src="../jquery/custom/ni_menu.js"></script>
+    <script src="../js/script.js"></script>
+
+</html>
 
