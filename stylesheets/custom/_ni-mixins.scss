@@ -2,35 +2,18 @@
 // Custom Mixins - New Internationalist CMS Templates 2014 - Peter Stewart (pete.stewart@newint.org)
 // ----------------------------------------------------------------------------------------------------
 
+@mixin font-size-em($sizevalue: 1.6) {
+  font-size: ($sizevalue * $base-px) + px;
+  font-size: $sizevalue + rem;
+}
 
-// Utilities
-// -------------------------
+@mixin rem($key,$px) {
+  #{$key}: $px;
+  #{$key}: $px/$rem-ratio;
+}
 
-/*
-@mixin ni_header-logo() // This is to be assign to tag.
-{
-    background-image: url($ni_mobile-logo);
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: block;
-    height: $ni_mobile-logo-height;
-    width: $ni_icon-logo-width;
-
-    margin-left: 5px;
+@mixin font-size($px: 16px) {
+  @include rem(font-size,$px);
 }
 
 
-@mixin ni_header-logo-mid() // This is to be assign to tag.
-{
-    width: $ni_mid-logo-width;
-    background-position: $ni_mid-logo-bg-position;
-}
-
-@mixin ni_header-logo-lg() // This is to be assign to tag.
-{
-    height: $ni_icon-logo-height;
-    width: $ni_icon-logo-width;
-    background-position: $ni_icon-logo-bg-position;
-} 
-
-*/

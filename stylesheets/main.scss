@@ -2,6 +2,7 @@
 // Bootstrap variable override -- bs vars are over written here so we can update bs in the future. -- Odd point that SASS seems to take the first variable as the master, rather than overriding.
 @import "custom/bs-var-override";
 
+
 // Bootstrap variables -- removed from _bootstrap.scss so they can be over writen here
 @import "bootstrap/variables";
 
@@ -11,6 +12,7 @@
 
 // 320 and up scss files
 //@import "320andup-custom/320andup-scss";
+@import "custom/ni-functions";
 
 // Custom variables
 @import "custom/ni-variables";
@@ -18,6 +20,7 @@
 // Custom mixins
 @import "custom/ni-mixins";
 
+@import "custom/bs-scaf-override";
 // Custom extendtions 
 @import "custom/ni-extend";
 
