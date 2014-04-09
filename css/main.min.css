@@ -5862,7 +5862,7 @@ html {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  font-size: 14px/strip-unit(base-font-size)/1rem;
+  font-size: 1.4rem;
   line-height: 1.42857;
   color: #333333;
   background-color: white; }
@@ -5887,7 +5887,7 @@ body {
 
 .breadcrumb, .ni_breadcrumb {
   position: fixed;
-  top: 53px;
+  top: 51px;
   width: 100%;
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3); }
@@ -5898,7 +5898,7 @@ body {
 #ni_main {
   height: 800px;
   width: 100%;
-  margin-top: 90px; }
+  margin-top: 77px; }
 
 img {
   width: 100%;
@@ -5936,15 +5936,18 @@ a:focus {
   margin: 0; }
 
 .ni_navbar-login, .ni_navbar-search, .ni_navbar-menu {
-  width: 102%;
+  width: 32.1rem;
+  height: 100%;
   background-color: #fff;
   padding: 8px 15px;
-  position: absolute;
-  /* border: 3px solid rgb(160, 60, 60);*/
-  top: 3.8em; }
+  position: fixed;
+  top: 3.8em;
+  z-index: 20; }
 
 .ni_navbar-search {
-  border-bottom: 3px solid #a03c3c; }
+  border-bottom: 3px solid #a03c3c;
+  height: auto;
+  width: 101%; }
 
 .ni_navbar-menu {
   padding: 8px 0; }
@@ -6034,8 +6037,8 @@ a:focus {
 
 .ni_droplet a {
   padding-left: 30px !important;
-  font-size: 12;
-  font-size: 12/strip-unit(base-font-size)/1rem; }
+  font-size: 12px;
+  font-size: 1.2rem; }
 
 #carousel {
   max-width: 600px;
@@ -6053,70 +6056,93 @@ a:focus {
 #ni_user-login-form {
   padding: 10px 0; }
 
-blockquote {
-  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-  border-left: 0.5em solid #a03c3c;
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
-  background-color: #fff;
-  margin-left: 1em;
-  padding: 1px 15px 9px; }
+/*blockquote
+{
+    @include box-shadow(0 0 6px rgba(0,0,0,0.5));
+    border-left: 0.5em solid $brand-primary;
+    @include border-left-radius(3px);
+    background-color: #fff;
+    margin-left: 1em;
+    padding: 1px 15px 9px;
+}
 
-blockquote p {
-  font-size: 14px;
-  font-size: 14px/strip-unit(base-font-size)/1rem;
-  line-height: 1.42857;
-  display: inline-block; }
 
-blockquote:before {
-  content: '\201C';
-  margin: 0 0.67em 1em -1.19em;
-  color: #a03c3c;
-  font-size: 42;
-  font-size: 42/strip-unit(base-font-size)/1rem;
-  line-height: 1.142857143em;
-  font-weight: bold; }
+blockquote p
+{
+    @include font-size($font-size-base);
+    line-height: $line-height-base;
+    display: inline-block;
+}
+blockquote:before
+{
+    content:'\201C';
+    margin: 0 0.67em 1em -1.19em;
+    color: $brand-primary;
 
+    @include font-size(42);
+    line-height:1.142857143em;
+    font-weight:bold;
+}
+*/
 .ni_blog-article-list {
-  max-width: 67.857142857em;
-  width: 95%;
+  max-width: 95rem;
+  width: 100%;
   margin: auto; }
 
 .ni_blog-article-list h1 {
-  font-size: 28;
-  font-size: 28/strip-unit(base-font-size)/1rem; }
+  font-size: 21px;
+  font-size: 2.1rem;
+  margin-left: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%; }
 
-.ni_footer {
-  clear: both;
-  height: 30px;
-  margin-top: 20px;
-  padding: 5px;
-  text-align: center;
-  border-top: 4px solid #a03c3c; }
+.ni_blog-article-list p {
+  margin-left: 2%;
+  margin-top: 3px;
+  margin-bottom: 5px; }
 
-.ni_foot-links {
-  overflow: hidden;
-  margin: auto;
-  display: inline-block;
-  padding: 0; }
+.ni_top-article {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-bottom: 1px;
+  margin-bottom: 8px; }
 
-.ni_foot-links li {
-  float: left;
-  list-style-type: none;
-  padding: 10px; }
+/*.ni_footer
+{
+    clear: both;
+    height: 30px;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+    border-top: 4px solid $brand-primary;
+}
 
-.ni_copyright {
-  color: #999999;
-  font-size: 12px;
-  font-size: 12px/strip-unit(base-font-size)/1rem; }
+.ni_foot-links
+{
+    overflow: hidden;
+    margin: auto;
+    display: inline-block;
+    padding: 0;
+}
 
+.ni_foot-links li
+{
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.ni_copyright
+{
+    color: $gray-light;
+    @include font-size($font-size-small);
+}
+*/
 .ni_navbar-toggle {
   margin-top: 0;
   margin-bottom: 0px;
   padding: 9px 12px 5px;
-  font-size: 18;
-  font-size: 18/strip-unit(base-font-size)/1rem; }
+  font-size: 18px;
+  font-size: 1.8rem; }
 
 .ni_color-white {
   color: #fff; }
@@ -6166,10 +6192,10 @@ blockquote:before {
   border-bottom: 2px solid #c23928 !important; }
 
 .ni_menu-in {
-  right: -1%; }
+  left: 0; }
 
 .ni_menu-out {
-  right: 110%; }
+  left: -110%; }
 
 .ni_menu-up {
   height: 0;

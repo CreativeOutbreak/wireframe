@@ -55,7 +55,6 @@ $base-size: $base-percent * 1%;
 $base-px: $base-percent * 0.16;
 
 $base-font-size: 10px;
-$rem-ratio: strip-unit(base-font-size) / 1rem;
-@debug $rem-ratio;
+$rem-ratio: strip-unit($base-font-size) / 1rem;
 
  

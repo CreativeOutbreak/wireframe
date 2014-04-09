@@ -12,10 +12,13 @@
 
 // 320 and up scss files
 //@import "320andup-custom/320andup-scss";
+
+// Custom functions
 @import "custom/ni-functions";
 
 // Custom variables
 @import "custom/ni-variables";
+
 
 // Custom mixins
 @import "custom/ni-mixins";

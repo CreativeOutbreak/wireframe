@@ -12,7 +12,7 @@ body
 #ni_main {
     height:800px;
     width:100%;
-    margin-top:90px;
+    margin-top:77px;
 }
 
 img {
@@ -39,7 +39,7 @@ a:focus {
 .ni_header
 {
     //@extend .row;
-    background-color:$brand-primary;
+    background-color: $brand-primary;
     padding: 5px 0 1px 0;
     position: fixed;
     z-index: 10;
@@ -73,18 +73,20 @@ a:focus {
 
 .ni_navbar-login, .ni_navbar-search, .ni_navbar-menu
 {
-    width: 102%;
+    width: px-rem(321px, $rem-ratio);
+    height: 100%;
     background-color: #fff;
     padding: 8px 15px;
 
-    position: absolute;
-    // left: -1%;
-    /* border: 3px solid rgb(160, 60, 60);*/
+    position: fixed;
     top: 3.8em;
+    z-index: 20;
 }
 
 .ni_navbar-search {
     border-bottom: 3px solid $brand-primary;
+    height: auto;
+    width: 101%;
 }
 
 .ni_navbar-menu
@@ -101,7 +103,7 @@ a:focus {
 }
 
 #ni_menu-tab {
-    padding-left:3px;
+    padding-left: 3px;
 }
 
 .ni_tab-mag {
@@ -199,7 +201,7 @@ a:focus {
 
 .ni_droplet a {
     padding-left: 30px !important;
-    @include font-size(12);
+    @include font-size(12px);
 }
 
 #carousel
@@ -226,7 +228,7 @@ a:focus {
     padding: 10px 0;
 }
 
-blockquote
+/*blockquote
 {
     @include box-shadow(0 0 6px rgba(0,0,0,0.5));
     border-left: 0.5em solid $brand-primary;
@@ -253,15 +255,31 @@ blockquote:before
     line-height:1.142857143em;
     font-weight:bold;
 }
+*/
 
 .ni_blog-article-list {
-    max-width: 67.857142857em;
-    width: 95%;
+    max-width: px-rem(950px, $rem-ratio);
+    width: 100%;
     margin: auto;
 }
 
 .ni_blog-article-list h1 {
-    @include font-size(28);
+    @include font-size(21px);
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.ni_blog-article-list p {
+    margin-left: 2%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.ni_top-article {
+    background-color: rgba(0,0,0,0.1);
+    padding-bottom: 1px;
+    margin-bottom: 8px;
 }
 
 //.ni_awards cite
@@ -269,7 +287,7 @@ blockquote:before
     //    display: block;
 //}
 
-.ni_footer
+/*.ni_footer
 {
     clear: both;
     height: 30px;
@@ -299,14 +317,14 @@ blockquote:before
     color: $gray-light;
     @include font-size($font-size-small);
 }
-
+*/
 
 .ni_navbar-toggle
 {
     margin-top: 0;
     margin-bottom: 0px;
     padding: 9px 12px 5px;
-    @include font-size(18);
+    @include font-size(18px);
 }
 
 

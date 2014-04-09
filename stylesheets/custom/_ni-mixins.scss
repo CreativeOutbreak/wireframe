@@ -2,14 +2,10 @@
 // Custom Mixins - New Internationalist CMS Templates 2014 - Peter Stewart (pete.stewart@newint.org)
 // ----------------------------------------------------------------------------------------------------
 
-@mixin font-size-em($sizevalue: 1.6) {
-  font-size: ($sizevalue * $base-px) + px;
-  font-size: $sizevalue + rem;
-}
 
 @mixin rem($key,$px) {
   #{$key}: $px;
-  #{$key}: $px/$rem-ratio;
+  #{$key}: px-rem($px, $rem-ratio);
 }
 
 @mixin font-size($px: 16px) {

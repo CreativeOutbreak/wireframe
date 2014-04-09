@@ -1,3 +1,7 @@
 @function strip-unit($num) {
   @return $num / ($num * 0 + 1);
 }
+
+@function px-rem($px, $rem-ratio) {
+    @return strip-unit($px) / $rem-ratio;
+}
