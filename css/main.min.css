@@ -251,6 +251,7 @@ th {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/bootstrap/glyphicons-regular.eot");
   src: url("../fonts/bootstrap/glyphicons-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-regular.svg#glyphicons_regular") format("svg"); }
+
 .glyphicon {
   position: relative;
   top: 1px;
@@ -1685,7 +1686,7 @@ th {
 
 html {
   font-size: 62.5%;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -4739,6 +4740,7 @@ a.thumbnail.active {
 
   to {
     background-position: 0 0; } }
+
 .progress {
   overflow: hidden;
   height: 20px;
@@ -5688,7 +5690,7 @@ button.close {
     border-radius: 10px;
     cursor: pointer;
     background-color: #000 \9;
-    background-color: transparent; }
+    background-color: rgba(0, 0, 0, 0); }
   .carousel-indicators .active {
     margin: 0;
     width: 12px;
@@ -5769,6 +5771,7 @@ button.close {
 
 @-ms-viewport {
   width: device-width; }
+
 .visible-xs, .visible-sm, .visible-md, .visible-lg {
   display: none !important; }
 
@@ -5857,7 +5860,7 @@ button.close {
     display: none !important; } }
 html {
   font-size: 62.5%;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -5936,18 +5939,23 @@ a:focus {
   margin: 0; }
 
 .ni_navbar-login, .ni_navbar-search, .ni_navbar-menu {
-  width: 32.1rem;
+  max-width: 32.1rem;
   height: 100%;
   background-color: #fff;
   padding: 8px 15px;
   position: fixed;
-  top: 3.8em;
-  z-index: 20; }
+  top: 51px;
+  z-index: 20;
+  border-right: 2px solid #a03c3c; }
+
+.ni_navbar-login {
+  overflow-y: auto; }
 
 .ni_navbar-search {
   border-bottom: 3px solid #a03c3c;
   height: auto;
-  width: 101%; }
+  width: 101%;
+  max-width: 101%; }
 
 .ni_navbar-menu {
   padding: 8px 0; }
@@ -5957,6 +5965,9 @@ a:focus {
   margin-right: 4%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   font-weight: bold; }
+
+.ni_tabs {
+  height: 100%; }
 
 #ni_menu-tab {
   padding-left: 3px; }
@@ -6010,7 +6021,7 @@ a:focus {
   border-width: 3px 0 2px 0;
   border-style: solid;
   overflow-y: auto;
-  max-height: 333px; }
+  height: 100%; }
 
 #ni_pan-mag {
   border-color: #a03c3c;
@@ -6205,4 +6216,4 @@ blockquote:before
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
   #ni_pan-mag, #ni_pan-books, #ni_pan-shop, #ni_pan-blog {
-    max-height: 207px; } }
+    /* max-height: 207px; */ } }

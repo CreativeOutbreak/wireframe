@@ -73,20 +73,27 @@ a:focus {
 
 .ni_navbar-login, .ni_navbar-search, .ni_navbar-menu
 {
-    width: px-rem(321px, $rem-ratio);
+    max-width: px-rem(321px, $rem-ratio);
     height: 100%;
     background-color: #fff;
     padding: 8px 15px;
 
     position: fixed;
-    top: 3.8em;
+    //overflow-y: auto;
+    top: 51px;
     z-index: 20;
+    border-right: 2px solid $brand-primary;
+}
+
+.ni_navbar-login {
+    overflow-y: auto;
 }
 
 .ni_navbar-search {
     border-bottom: 3px solid $brand-primary;
     height: auto;
     width: 101%;
+    max-width:101%;
 }
 
 .ni_navbar-menu
@@ -100,6 +107,10 @@ a:focus {
     margin-right: 4%;
     border-bottom: 1px solid rgba(0,0,0,0.05);
     font-weight: bold;
+}
+
+.ni_tabs {
+    height:100%;
 }
 
 #ni_menu-tab {
@@ -166,7 +177,7 @@ a:focus {
     border-style: solid;
 
     overflow-y: auto;
-    max-height: 333px;  
+    height: 100%; 
 }
 
 #ni_pan-mag  {
