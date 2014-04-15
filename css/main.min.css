@@ -251,7 +251,6 @@ th {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/bootstrap/glyphicons-regular.eot");
   src: url("../fonts/bootstrap/glyphicons-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-regular.svg#glyphicons_regular") format("svg"); }
-
 .glyphicon {
   position: relative;
   top: 1px;
@@ -1686,7 +1685,7 @@ th {
 
 html {
   font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1842,7 +1841,7 @@ p {
   font-size: 16px;
   font-weight: 200;
   line-height: 1.4; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .lead {
       font-size: 21px; } }
 
@@ -1981,7 +1980,7 @@ dd {
   display: table; }
 .dl-horizontal dd:after {
   clear: both; }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -2109,7 +2108,7 @@ pre {
     display: table; }
   .container:after {
     clear: both; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .container {
       width: 750px; } }
   @media (min-width: 992px) {
@@ -2301,7 +2300,7 @@ pre {
 .col-xs-offset-12 {
   margin-left: 100%; }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left; }
 
@@ -2924,7 +2923,7 @@ table th[class*="col-"] {
 .table-hover > tbody > tr > th.danger:hover, .table-hover > tbody > tr.danger:hover > td, .table-hover > tbody > tr.danger:hover > th {
   background-color: #ebcccc; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
@@ -3271,7 +3270,7 @@ select[multiple].input-lg,
   margin-bottom: 10px;
   color: #737373; }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .form-inline .form-group, .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -3323,7 +3322,7 @@ select[multiple].input-lg,
 .form-horizontal .form-control-static {
   padding-top: 7px;
   padding-bottom: 7px; }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .form-horizontal .control-label {
     text-align: right; } }
 .form-horizontal .has-feedback .form-control-feedback {
@@ -3700,7 +3699,7 @@ tbody.collapse.in {
   bottom: 100%;
   margin-bottom: 1px; }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto; }
@@ -4049,7 +4048,7 @@ tbody.collapse.in {
   .nav-justified > .dropdown .dropdown-menu {
     top: auto;
     left: auto; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .nav-justified > li, .nav-tabs.nav-justified > li {
       display: table-cell;
       width: 1%; }
@@ -4067,7 +4066,7 @@ tbody.collapse.in {
   .nav-tabs-justified > .active > a:focus,
   .nav-tabs.nav-justified > .active > a:focus {
     border: 1px solid #dddddd; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
       border-bottom: 1px solid #dddddd;
       border-radius: 4px 4px 0 0; }
@@ -4098,7 +4097,7 @@ tbody.collapse.in {
     display: table; }
   .navbar:after {
     clear: both; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .navbar {
       border-radius: 4px; } }
 
@@ -4107,7 +4106,7 @@ tbody.collapse.in {
   display: table; }
 .navbar-header:after {
   clear: both; }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .navbar-header {
     float: left; } }
 
@@ -4126,7 +4125,7 @@ tbody.collapse.in {
     clear: both; }
   .navbar-collapse.in {
     overflow-y: auto; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .navbar-collapse {
       width: auto;
       border-top: 0;
@@ -4148,7 +4147,7 @@ tbody.collapse.in {
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .container > .navbar-header,
     .container > .navbar-collapse,
     .container-fluid > .navbar-header,
@@ -4159,7 +4158,7 @@ tbody.collapse.in {
 .navbar-static-top {
   z-index: 1000;
   border-width: 0 0 1px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .navbar-static-top {
       border-radius: 0; } }
 
@@ -4169,7 +4168,7 @@ tbody.collapse.in {
   right: 0;
   left: 0;
   z-index: 1030; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .navbar-fixed-top,
     .navbar-fixed-bottom {
       border-radius: 0; } }
@@ -4191,7 +4190,7 @@ tbody.collapse.in {
   height: 50px; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
@@ -4215,7 +4214,7 @@ tbody.collapse.in {
     border-radius: 1px; }
   .navbar-toggle .icon-bar + .icon-bar {
     margin-top: 4px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .navbar-toggle {
       display: none; } }
 
@@ -4225,7 +4224,7 @@ tbody.collapse.in {
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 20px; }
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     .navbar-nav .open .dropdown-menu {
       position: static;
       float: none;
@@ -4241,7 +4240,7 @@ tbody.collapse.in {
         line-height: 20px; }
         .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
           background-image: none; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .navbar-nav {
       float: left;
       margin: 0; }
@@ -4253,7 +4252,7 @@ tbody.collapse.in {
       .navbar-nav.navbar-right:last-child {
         margin-right: -15px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .navbar-left {
     float: left !important; }
 
@@ -4269,10 +4268,10 @@ tbody.collapse.in {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   margin-top: 8px;
   margin-bottom: 8px; }
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     .navbar-form .form-group {
       margin-bottom: 5px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .navbar-form {
       width: auto;
       border: 0;
@@ -4307,7 +4306,7 @@ tbody.collapse.in {
 .navbar-text {
   margin-top: 15px;
   margin-bottom: 15px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .navbar-text {
       float: left;
       margin-left: 15px;
@@ -4348,7 +4347,7 @@ tbody.collapse.in {
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: #e7e7e7;
     color: #555555; }
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #777777; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -4404,7 +4403,7 @@ tbody.collapse.in {
   .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: #090909;
     color: white; }
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
       border-color: #090909; }
     .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
@@ -4740,7 +4739,6 @@ a.thumbnail.active {
 
   to {
     background-position: 0 0; } }
-
 .progress {
   overflow: hidden;
   height: 20px;
@@ -5363,7 +5361,7 @@ button.close {
   .modal-footer .btn-block + .btn-block {
     margin-left: 0; }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .modal-dialog {
     width: 600px;
     margin: 30px auto; }
@@ -5690,7 +5688,7 @@ button.close {
     border-radius: 10px;
     cursor: pointer;
     background-color: #000 \9;
-    background-color: rgba(0, 0, 0, 0); }
+    background-color: transparent; }
   .carousel-indicators .active {
     margin: 0;
     width: 12px;
@@ -5711,7 +5709,7 @@ button.close {
   .carousel-caption .btn {
     text-shadow: none; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
@@ -5771,11 +5769,10 @@ button.close {
 
 @-ms-viewport {
   width: device-width; }
-
 .visible-xs, .visible-sm, .visible-md, .visible-lg {
   display: none !important; }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .visible-xs {
     display: block !important; }
 
@@ -5788,7 +5785,7 @@ button.close {
   th.visible-xs,
   td.visible-xs {
     display: table-cell !important; } }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 1200px) and (max-width: 991px) {
   .visible-sm {
     display: block !important; }
 
@@ -5827,10 +5824,10 @@ button.close {
   th.visible-lg,
   td.visible-lg {
     display: table-cell !important; } }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .hidden-xs {
     display: none !important; } }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 1200px) and (max-width: 991px) {
   .hidden-sm {
     display: none !important; } }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -5860,7 +5857,7 @@ button.close {
     display: none !important; } }
 html {
   font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -5939,7 +5936,7 @@ a:focus {
   margin: 0; }
 
 .ni_navbar-login, .ni_navbar-search, .ni_navbar-menu {
-  max-width: 32.1rem;
+  width: 32.1rem;
   height: 100%;
   background-color: #fff;
   padding: 8px 15px;
